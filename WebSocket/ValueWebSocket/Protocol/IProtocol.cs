@@ -1,5 +1,4 @@
 ﻿using System;
-using ValueWebSocket.Protocol.Draft10;
 
 namespace ValueWebSocket.Protocol
 {

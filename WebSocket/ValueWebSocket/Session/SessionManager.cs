@@ -1,4 +1,15 @@
-﻿using System;
+﻿/*
+  >>>------ Copyright (c) 2012 zformular ----> 
+ |                                            |
+ |            Author: zformular               |
+ |        E-mail: zformular@163.com           |
+ |             Date: 10.18.2012               |
+ |                                            |
+ ╰==========================================╯
+ 
+*/
+
+using System;
 using System.Net.Sockets;
 using System.Collections.Generic;
 using ValueWebSocket.Infrastructure;
@@ -80,6 +91,16 @@ namespace ValueWebSocket.Session
             }
 
             return null;
+        }
+
+        public void Dispose()
+        {
+            foreach (ValueSession session in sessions)
+            {
+                session.Socket.Shutdown(SocketShutdown.Both);
+                session.Socket.Close();
+            }
+            sessions.Clear();
         }
     }
 }

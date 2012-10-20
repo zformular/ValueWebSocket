@@ -3,7 +3,6 @@ using System.Text;
 using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using ValueHelper.Infrastructure;
-using ValueWebSocket.Protocol.Draft10;
 using ValueWebSocket.Infrastructure;
 
 namespace ValueWebSocket.Protocol

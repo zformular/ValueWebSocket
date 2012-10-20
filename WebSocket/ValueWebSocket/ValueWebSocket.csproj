@@ -44,14 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\Common.cs" />
-    <Compile Include="Protocol\Draft10\Message.cs" />
-    <Compile Include="Protocol\Draft10\MessageHeader.cs" />
-    <Compile Include="Protocol\Draft10\OperType.cs" />
+    <Compile Include="Protocol\Message.cs" />
+    <Compile Include="Protocol\MessageHeader.cs" />
+    <Compile Include="Protocol\OperType.cs" />
     <Compile Include="Protocol\ValueProtocol.cs" />
     <Compile Include="Session\SessionManager.cs" />
     <Compile Include="Session\ValueSession.cs" />
     <Compile Include="Protocol\IProtocol.cs" />
-    <Compile Include="Protocol\Draft10\ProtocolDraft10.cs" />
+    <Compile Include="Protocol\ProtocolDraft10.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueWebSocket.cs" />
   </ItemGroup>

@@ -28,7 +28,7 @@
             }
 
             ws.onmessage = function (event) {
-                messageBoard.append("# " + event.data + "<br />");
+                messageBoard.append(event.data + "<br />");
             }
 
             ws.onopen = function () {

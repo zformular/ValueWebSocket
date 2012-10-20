@@ -32,13 +32,13 @@ namespace ValueWebSocket.Test
 
             RegisterRoutes(RouteTable.Routes);
 
-            webSocketManager.InitWebSocket();
+            webSocketManager.Init();
         }
 
 
         protected void Application_End(object sender, EventArgs e)
         {
-
+            webSocketManager.Close();
         }
 
     }
